@@ -1,0 +1,197 @@
+@font-face {
+  font-family: "Astonpoliz";
+  src: url("../fonts/astonpoliz/Astonpoliz.ttf") format("truetype");
+}
+
+body {
+  font-family: "Astonpoliz", sans-serif;
+}
+
+/* Styling tombol utama */
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #87c332;
+  --bs-btn-border-color: #87c332;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #6fa11f;
+  --bs-btn-hover-border-color: #6fa11f;
+  --bs-btn-focus-shadow-rgb: 133, 195, 50;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #6fa11f;
+  --bs-btn-active-border-color: #5a8e1c;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #87c332;
+  --bs-btn-disabled-border-color: #87c332;
+  border-radius: 50px;
+  padding: 0 20px;
+}
+
+/* Warna utama */
+.primary-color {
+  color: #262626;
+}
+
+/* Warna sekunder */
+.secondary-color {
+  color: #87c332;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #424242;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 1); /* Adds a soft shadow to the bottom */
+}
+
+.navbar-brand img {
+  width: 40px;
+}
+
+.nav-link {
+  font-size: 1.25rem !important;
+  margin-right: 0.25rem !important;
+}
+
+.nav-link:hover {
+  color: #86c232;
+}
+
+/* Jumbotron */
+.jumbotron {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 420px;
+  background-color: #262626;
+  color: #9d9d9d;
+  margin-bottom: 0;
+}
+
+.jumbotron .left-side {
+  flex: 1;
+  text-align: left;
+}
+
+.jumbotron .right-side {
+  flex: 2;
+  padding-left: 20px;
+}
+
+#jumbotron-logo {
+  width: 350px;
+  animation: zoomInOut 5s infinite ease-in-out; /* Continuous zoom with subtle effect */
+  transition: transform 0.5s ease-in-out; /* Smooth hover effect */
+}
+
+/* Styling buat efek ngetik cursor */
+.typed-cursor {
+  padding: 0 !important;
+  margin: 0 !important;
+  font-size: 2rem;
+  font-family: "Times New Roman", Times, serif !important;
+  color: #87c332 !important;
+}
+
+#jumbotron-changing-text {
+  /* styling tambahan kalo perlu */
+}
+
+/* Styling buat judul section */
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Section 'Who We Are' */
+#who-we-are {
+  min-height: 100%;
+  /* height: 420px; */
+  position: relative;
+}
+
+/* Overlay buat background image */
+/* #who-we-are::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/sprinkles.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  opacity: 0.2; 
+  z-index: -1;
+  pointer-events: none;
+} */
+
+/* Gambar portfolio */
+.portfolio-img {
+  width: 100%;
+  height: auto;
+}
+
+/* Form kontak */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Footer */
+footer {
+  background-color: #424242;
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+}
+
+footer a {
+  color: #86c232;
+}
+
+/* Section services dan contact */
+#services,
+#contact-us {
+  background-color: #262626;
+  color: #9d9d9d;
+}
+
+/* navigati section portfolio */
+.nav-underline .nav-link {
+  color: #9d9d9d;
+}
+.nav-underline .nav-link.active {
+  color: #87c332;
+}
+
+@keyframes zoomInOut {
+  0%,
+  100% {
+    transform: scale(1); /* No zoom at the start and end */
+  }
+  50% {
+    transform: scale(1.02); /* Slight zoom in */
+  }
+}
+
+/* Zoom Effect on Hover */
+/* #jumbotron-logo:hover {
+  animation: none;
+  transform: scale(1.1);
+} */
+
+#services {
+  min-height: 100%;
+  height: 420px;
+  position: relative;
+}
+
+.role-item {
+  /* border: solid 5px grey;
+  background-color: #9d9d9d; */
+}
+
+.role-item img {
+  width: 70px;
+}
