@@ -78,7 +78,7 @@ body {
 }
 
 #jumbotron-logo {
-  width: 350px;
+  width: 100% !important;
   animation: zoomInOut 5s infinite ease-in-out; /* Continuous zoom with subtle effect */
   transition: transform 0.5s ease-in-out; /* Smooth hover effect */
 }
@@ -194,4 +194,8 @@ footer a {
 
 .role-item img {
   width: 70px;
+}
+
+.bodor {
+  outline: solid 1px red;
 }

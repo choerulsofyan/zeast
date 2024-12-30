@@ -62,20 +62,34 @@
     </header>
 
     <!-- Jumbotron -->
-    <section class="jumbotron">
-      <div class="container d-flex align-items-center">
-        <div class="left-side d-flex justify-content-center">
+    <section class="jumbotron container-fluid min-vh-100">
+      <div class="row justify-content-center">
+        <!-- Logo Section -->
+        <div class="col-md-4 text-center">
           <img
             id="jumbotron-logo"
+            class="img-fluid"
             src="assets/images/logo-big.png"
             alt="Zeast"
           />
         </div>
-        <div class="right-side ms-3 p-3 d-flex flex-row">
-          <h1 id="jumbotron-changing-text">
-            We make your ideas shine. Let's make it unforgettable!
-          </h1>
-          <!-- <button class="btn btn-primary" id="change-text-btn">Chat Us</button> -->
+
+        <!-- Text and Button Section -->
+        <div class="col-md-6 d-flex flex-column justify-content-center">
+          <!-- Text at the very top -->
+          <div class="jumbotron-changing-text-container h-70 pt-4">
+            <h1 id="jumbotron-changing-text" class="">
+              <!-- We bring your ideas to life with cutting-edge tech and stunning design. Let’s make something unforgettable! -->
+              We make your ideas shine. Let's make it unforgettable!
+            </h1>
+          </div>
+
+          <!-- Button at the very bottom -->
+          <div class="jumbotron-cta-button-container mt-auto">
+            <button class="btn btn-primary" id="change-text-btn">
+              Chat Us
+            </button>
+          </div>
         </div>
       </div>
     </section>
