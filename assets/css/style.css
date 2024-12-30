@@ -129,6 +129,13 @@ body {
   position: relative;
 }
 
+.image-grid img {
+  width: 100%; /* Full width within the column */
+  height: 150px; /* Uniform height for all images */
+  object-fit: cover; /* Crop the image to fit */
+  outline: solid 4px red;
+}
+
 /* Overlay buat background image */
 /* #who-we-are::before {
   content: "";
